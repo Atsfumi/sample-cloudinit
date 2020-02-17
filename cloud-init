@@ -1,2 +1,14 @@
 #cloud-config
 timezone: Asia/Tokyo
+
+users:
+ - default
+
+disable_root: 1
+ssh_pwauth:   1
+
+system_info:
+  default_user:
+    name: centos
+    plain_text_passwd: 'password'
+    lock_passwd: false
