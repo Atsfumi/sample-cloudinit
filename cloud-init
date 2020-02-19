@@ -1,17 +1,5 @@
 #cloud-config
-timezone: Asia/Tokyo
-users: 
-  - default
-  - name: foobar
-    gecos:User N. Ame
-    selinux-user: staff_u
-    groups: users,wheel
-    ssh_pwauth:True
-    ssh_authorized_keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAx3uTKthP8u+RKaZT7ZSIntYdPony/D/R/oFaZzpTiNovIKrHSGgc80wNlNCHfmGvnfXU2iWxqyK2ZXLyGPceKBEZwyYrolTpvmQvnRTpgv4duivSla6Fq5h+97TZW9orii43d1+Hzf4wBxWWRkfqmLJCri952MEaL3dy0EkcRWf2q9NWcqXDgRwhQpyfcw1v9wFDaD9UA8185upHg8dqUk5Ed58eXqWcUqxPYfM4qUsPxiQlYWOXdrFhBnscMq/uMquvtY9fYg2NlqOk3cDyhWQ5IvlqKhdhwn8JH5D2R1hV9FSgzp8jTriOOA6ktPaVwGlYMWb+B8eOHKyKrx1Rew== Atsufumi@DESK
 chpasswd:
-  list:|
-    root:password
-    cloud-user:atomic
-    foobar:foobar
-  expire:False
+  expire: false
+  list:
+     ubuntu:ubuntu
