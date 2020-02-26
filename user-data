@@ -1,6 +1,14 @@
 #cloud-config
 timezone: Asia/Tokyo
 locale: ja_JP.utf8
-password: [password]
-chpasswd: { expire: False }
-ssh_pwauth: True
+users:
+ - default
+
+disable_root: 1
+ssh_pwauth:   1
+
+system_info:
+  default_user:
+    name: centos
+    plain_text_passwd: 'P@ssw0rd'
+    lock_passwd: false
