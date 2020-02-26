@@ -1,5 +1,0 @@
-#cloud-config
-chpasswd:
-  expire: false
-  list:
-     ubuntu:ubuntu
