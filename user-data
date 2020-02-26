@@ -1,3 +1,6 @@
 #cloud-config
 timezone: Asia/Tokyo
 locale: ja_JP.utf8
+password: [password]
+chpasswd: { expire: False }
+ssh_pwauth: True
